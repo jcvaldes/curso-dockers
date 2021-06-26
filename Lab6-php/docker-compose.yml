@@ -1,6 +1,7 @@
 version: "3.7"
 services:
   php_apache_server:
+    # construyo a partir de un Dockerfile
     build:
       context: ./image_php72_apache
     container_name: servidor_web
