@@ -3,7 +3,7 @@ docker-compose up -d --force-recreate
 
 # Tarea
 
-Armar un servicio de docker conservidor nginx para publicar el frontend
+Armar un servicio de docker con servidor nginx para publicar el frontend
 
 ejem: docker-compose.yml
 

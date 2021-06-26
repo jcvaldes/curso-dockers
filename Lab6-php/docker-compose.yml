@@ -4,6 +4,8 @@ services:
     # construyo a partir de un Dockerfile
     build:
       context: ./image_php72_apache
+      # Le indico que se llama de otra manera
+      # dockerfile: Dockerfile-qa
     container_name: servidor_web
     depends_on:
       - mariadb

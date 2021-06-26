@@ -14,5 +14,7 @@ services:
     image: nginx:1.21
     volumes:
       - ./frontend:/usr/share/nginx/html
-    ports:
+      ports:
       - 8085:80
+
+    
