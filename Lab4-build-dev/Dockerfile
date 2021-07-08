@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.6
 LABEL maintainer="Juan Carlos Valdés <idevkingos@gmail.com>"
 
 RUN useradd www && \
