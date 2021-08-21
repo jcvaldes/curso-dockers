@@ -8,15 +8,16 @@ RUN apt-get update --fix-missing && \
   apt-get install libpq-dev -y && \
   apt-get install apt-utils -y
 
-USER appuser
-RUN pip install bottle  && \
-    pip install redis  && \
-    pip install psycopg2 
+ENV PYTHONUNBUFFERED 1
 
-EXPOSE 3000
+USER appuser
+RUN pip install redis 
+ENTRYPOINT ["python"]
+
+# EXPOSE 3000
 
 
 # WORKDIR /home/appuser
 
 # CMD ["/bin/bash"]
-# CMD [ "python", "./sender.py" ]
+# CMD [ "python", "sender.py" ]

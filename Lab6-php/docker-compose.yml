@@ -22,7 +22,7 @@ services:
     build:
       context: ./image_mariadb10
     ports:
-      - 3306:3306
+      - 3308:3306
     volumes:
       #- persistdb:/var/lib/mysql_local
       # - ./dbfiles:/docker-entrypoint-initdb.d
